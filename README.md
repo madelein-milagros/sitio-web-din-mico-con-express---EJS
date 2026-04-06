@@ -1,5 +1,5 @@
 # 🚀 Sitio Web Dinámico con Express & EJS
->  | Desarrollo de Aplicaciones Web Avanzado  
+> **Desarrollo de Aplicaciones Web Avanzado**  
 > **Autor:** Milagros Ramos Chamorro 
 
 Aplicación web modular y escalable desarrollada con **Node.js**, **Express**, **EJS** y **Bootstrap 5**. El proyecto demuestra el manejo de rutas HTTP, renderizado dinámico en servidor, arquitectura basada en componentes reutilizables y buenas prácticas de organización del código.
@@ -17,52 +17,74 @@ Aplicación web modular y escalable desarrollada con **Node.js**, **Express**, *
 ---
 
 ## 📂 Estructura del Proyecto
+```
 oregon04/
 ├── public/
-│ └── css/
-│ └── style.css # Estilos personalizados (separados por buenas prácticas)
+│   └── css/
+│       └── style.css # Estilos personalizados (separados por buenas prácticas)
 ├── routes/
-│ └── rutas.js # Definición modular de rutas
+│   └── rutas.js # Definición modular de rutas
 ├── views/
-│ ├── partials/
-│ │ ├── header.ejs # Barra de navegación reutilizable
-│ │ └── footer.ejs # Pie de página reutilizable
-│ └── pages/
-│ ├── index.ejs # Página principal
-│ ├── nosotros.ejs # Página informativa
-│ └── contacto.ejs # Formulario de contacto
+│   ├── partials/
+│   │   ├── header.ejs # Barra de navegación reutilizable
+│   │   └── footer.ejs # Pie de página reutilizable
+│   └── pages/
+│       ├── index.ejs # Página principal
+│       ├── nosotros.ejs # Página informativa
+│       └── contacto.ejs # Formulario de contacto
 ├── .gitignore # Excluye node_modules y archivos sensibles
 ├── index.js # Punto de entrada y configuración del servidor
 ├── app01.js # Scripts de prueba del laboratorio
 └── package.json # Dependencias y scripts de ejecución
+```
 
-2. Instalar dependencias
+## 🚀 Instalación y Ejecución
+
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/madelein-milagros/sitio-web-din-mico-con-express---EJS.git
+cd sitio-web-din-mico-con-express---EJS
+```
+
+### 2. Instalar dependencias
+```bash
 npm install
+```
 
-3. Ejecutar el servidor
-Modo desarrollo (con recarga automática):
+### 3. Ejecutar el servidor
+**Modo desarrollo** (con recarga automática):
+```bash
 npm run dev
+```
 
-Modo producción:
+**Modo producción:**
+```bash
 npm start
+```
 
-El servidor se ejecutará en: http://localhost:3000
+El servidor se ejecutará en: **http://localhost:3000**
 
-✨ Características Implementadas
-✅ Rutas Modulares: Organización limpia mediante express.Router() en archivos separados
-✅ Motor de Plantillas EJS: Renderizado dinámico con inyección de variables (<%= title %>)
-✅ Componentes Reutilizables: Sistema de partials (header/footer) para evitar duplicación de código
-✅ Diseño Responsivo: Integración completa de Bootstrap 5 y CSS personalizado servido desde /public/
-✅ Archivos Estáticos: Configuración de express.static() para separar lógica y presentación
-✅ Manejo de Errores: Ruta 404 personalizada para páginas no encontradas
-✅ Puerto Dinámico: Uso de process.env.PORT para compatibilidad con entornos de despliegue
+---
 
-📖 Aprendizajes y Buenas Prácticas
-Separación de Responsabilidades: Lógica de rutas, vistas y estilos en carpetas independientes.
-Reutilización de Código: Los partials permiten actualizar el menú o footer una sola vez y reflejarlo en todo el sitio.
-Rendimiento: Servir CSS externo permite al navegador cachear los estilos, mejorando tiempos de carga.
-Escalabilidad: La estructura modular facilita agregar nuevas páginas o funcionalidades sin modificar el núcleo del servidor.
-Versionado: Uso de .gitignore para evitar subir node_modules y mantener el repositorio ligero y profesional.
+## ✨ Características Implementadas
+- ✅ **Rutas Modulares**: Organización limpia mediante `express.Router()` en archivos separados
+- ✅ **Motor de Plantillas EJS**: Renderizado dinámico con inyección de variables (`<%= title %>`)
+- ✅ **Componentes Reutilizables**: Sistema de partials (header/footer) para evitar duplicación de código
+- ✅ **Diseño Responsivo**: Integración completa de Bootstrap 5 y CSS personalizado servido desde `/public/`
+- ✅ **Archivos Estáticos**: Configuración de `express.static()` para separar lógica y presentación
+- ✅ **Manejo de Errores**: Ruta 404 personalizada para páginas no encontradas
+- ✅ **Puerto Dinámico**: Uso de `process.env.PORT` para compatibilidad con entornos de despliegue
 
-Autor:
-Milagros Ramos
+---
+
+## 📖 Aprendizajes y Buenas Prácticas
+- **Separación de Responsabilidades**: Lógica de rutas, vistas y estilos en carpetas independientes.
+- **Reutilización de Código**: Los partials permiten actualizar el menú o footer una sola vez y reflejarlo en todo el sitio.
+- **Rendimiento**: Servir CSS externo permite al navegador cachear los estilos, mejorando tiempos de carga.
+- **Escalabilidad**: La estructura modular facilita agregar nuevas páginas o funcionalidades sin modificar el núcleo del servidor.
+- **Versionado**: Uso de `.gitignore` para evitar subir `node_modules` y mantener el repositorio ligero y profesional.
+
+---
+
+## 👨‍💻 Autor
+**Milagros Ramos Chamorro**
